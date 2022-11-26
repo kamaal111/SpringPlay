@@ -1,3 +1,12 @@
+gradlew = "./gradlew"
+
+build:
+	$(gradlew) build
+
 run:
-	./gradlew build
-	./gradlew bootRun
+	make build
+	$(gradlew) bootRun
+
+test:
+	make build
+	$(gradlew) test
